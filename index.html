@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Modak&family=Rasa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+        <title>Magic balls</title>
+    </head>
+
+    <body>
+        <h1>Oracat</h1>
+        <h2> Prêt(e) à connaître la réponse à ta question ? Demande au chat mystique. </h2>
+
+        <div class="questionSection">
+            <form>
+                <label for="question">Pose ta question… le chat te répondra. <span class="req">*</span> </label>
+                <!-- Intégrer le champ required pour bloquer le bouton si le champ est vide -->
+                <input type="text" id="question" placeholder="Je me demande si..." required minlength="5"/> 
+                <button class="button">Obtenir une réponse</button>
+            </form>
+        </div>
+
+        <div>
+            <figure>
+            <!--<figcaption>  </figcaption>-->
+            <img src="./dist/cat-gif.gif" alt = "Chat magique" class="img-cat">
+            </figure>
+            <button class="refresh">Poser une nouvelle question</button>
+        </div>
+
+
+        <script src="./src/js/script.js">
+
+        </script>
+
+    </body>
+</html>
